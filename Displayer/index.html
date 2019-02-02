@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Bible Cheater</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script type="text/javascript" src="quizlet.js"></script>
+		<script src="index.js"></script>
+		<style>
+			body {
+				background-color: rgb(182, 211, 255);
+			}
+
+			table,
+			td,
+			th {
+				border-collapse: collapse;
+				border: 3px solid white;
+			}
+			table {
+				display: table;
+				width: 100%;
+			}
+			td {
+				width: 50%;
+				padding: 10px;
+			}
+			h1 {
+				font-size: 26px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Quizlet Rip Lookup</h1>
+		<input type="text" placeholder=" search here" onkeyup="filter()" id="searchTerm" />
+		<br /><br />
+		<table id="results"></table>
+	</body>
+</html>
