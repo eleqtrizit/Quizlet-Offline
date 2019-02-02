@@ -15,6 +15,7 @@ function filter() {
 			let a = document.createElement("td");
 			q.innerHTML = json[i].question;
 			a.innerHTML = json[i].answer;
+			a.innerHTML += `<br><br><a href="${json[i].link}"  target="_blank">credit</a>`;
 			tr.appendChild(q);
 			tr.appendChild(a);
 			table.appendChild(tr);
